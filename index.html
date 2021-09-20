@@ -77,9 +77,19 @@
               class="form-control"
               placeholder="Enter your artist song name"
             />
-            <button onclick="searchSongs()" class="btn btn-success search-btn">
+            <button
+              id="search-button"
+              onclick="searchSongs()"
+              class="btn btn-success search-btn"
+            >
               Search
             </button>
+          </div>
+        </div>
+        <!-- Spinner -->
+        <div id="loading-spinner" class="d-flex justify-content-center d-none">
+          <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
           </div>
         </div>
         <!-- Single Lyrics -->
